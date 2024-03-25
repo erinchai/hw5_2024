@@ -65,21 +65,23 @@ solid 2px border using #45ADAD,
 
 /* second selector to curve the radius */
 .card{
+    flex-basis: 450px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
 
 /* Edit the css for the card class to match our example. Achieve this by using a flex-property to specify an initial “size” of 450px.  You need to think about this from a “flex” perspective and realize that flex-direction will affect the size of the elements.  You can see that in the mobile view they all have the same width.  */
 
-.card{
-    flex-basis: 450px;
-}
+
 
 /* Edit the css for the pricing class to match our example. You should use flex and the cards should be centered both horizontally and vertically. */
 .pricing{
+    min-height: 475px;
     display: flex;
-    flex-flow: wrap ; 
-    justify-content: center; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-flow: wrap ;  */
 }
 
 /* Style the images in the gallery class. These elements will have a solid 10px border with a color of #50C7C7, 10px margin on all four sides and a width of 300px.   */
@@ -124,7 +126,7 @@ solid 2px border using #45ADAD,
         justify-content: center; 
         align-items: center ;
         }
-    }
+    
 
 
     /* set all card widith to 275px */
@@ -139,6 +141,7 @@ solid 2px border using #45ADAD,
         z-index: 1000;
     } 
 
+}
 /* media for reduced motion - no animation */
 @media (prefers-reduced-motion: reduce) {
     #logo{
